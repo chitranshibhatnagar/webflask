@@ -1,0 +1,22 @@
+<html>
+ <body>
+ <h1>Sum of 2 Numbers</h1>
+   <p>Enter First number:</p>
+   <input type='text' class='first_val'>
+   <p>Enter Second number:</p>
+   <input type='text' class='second_val'>
+   <div class='results'></div>
+   <button type='button' class='calculate'>Calculate</button>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+   $(document).ready(function() {
+     let click = $('.calculate').click(function() {
+       var val1 = parseInt($('.first_val').val());
+       var val2 = parseInt($('.second_val').val());
+       var val3 = val1+val2;
+       $('.results').html('The result is '+val3);
+     });
+   });
+ </script>
+</html>
